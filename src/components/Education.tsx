@@ -1,14 +1,20 @@
-import { useScrollReveal } from '@/hooks/useScrollReveal';
-import { education, writing } from '@/data/portfolio';
-import { SectionLabel } from '@/components/About';
-import { BookOpen, PenLine } from 'lucide-react';
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { education, writing } from "@/data/portfolio";
+import { SectionLabel } from "@/components/About";
+import { BookOpen, PenLine } from "lucide-react";
 
 export default function Education() {
   const { ref, visible } = useScrollReveal();
 
   return (
-    <section id="education" className="section-glow-bottom relative py-20 lg:py-28 grain border-t border-[var(--border)]">
-      <div ref={ref} className={`max-w-6xl mx-auto px-5 lg:px-8 reveal ${visible ? 'visible' : ''}`}>
+    <section
+      id="education"
+      className="section-glow-bottom relative py-20 lg:py-28 grain border-t border-[var(--border)]"
+    >
+      <div
+        ref={ref}
+        className={`max-w-6xl mx-auto px-5 lg:px-8 reveal ${visible ? "visible" : ""}`}
+      >
         <SectionLabel num="05" label="Education & Writing" />
 
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 mt-10">
@@ -33,7 +39,9 @@ export default function Education() {
                         {edu.period}
                       </span>
                     </div>
-                    <p className="text-[15px] text-[var(--terracotta-light)] font-medium mb-2">{edu.degree}</p>
+                    <p className="text-[15px] text-[var(--terracotta-light)] font-medium mb-2">
+                      {edu.degree}
+                    </p>
                     <p className="text-[14px] text-[var(--ink-muted)] leading-[1.65] max-w-xl">
                       {edu.detail}
                     </p>
@@ -41,7 +49,9 @@ export default function Education() {
                       {edu.location}
                     </span>
                   </div>
-                  {i < education.length - 1 && <div className="h-px bg-[var(--border)]" />}
+                  {i < education.length - 1 && (
+                    <div className="h-px bg-[var(--border)]" />
+                  )}
                 </div>
               ))}
             </div>
@@ -60,7 +70,9 @@ export default function Education() {
               {writing.map((post, i) => (
                 <div key={post.title}>
                   <article className="group py-5 cursor-pointer">
-                    <span className="font-mono text-[11px] text-[var(--ink-faint)]">{post.date}</span>
+                    <span className="font-mono text-[11px] text-[var(--ink-faint)]">
+                      {post.date}
+                    </span>
                     <h3 className="font-serif text-lg font-semibold text-[var(--ink)] group-hover:text-[var(--terracotta)] transition-colors mt-1 leading-snug">
                       {post.title}
                     </h3>
@@ -68,7 +80,9 @@ export default function Education() {
                       {post.summary}
                     </p>
                   </article>
-                  {i < writing.length - 1 && <div className="h-px bg-[var(--border)]" />}
+                  {i < writing.length - 1 && (
+                    <div className="h-px bg-[var(--border)]" />
+                  )}
                 </div>
               ))}
             </div>

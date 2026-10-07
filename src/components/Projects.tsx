@@ -1,18 +1,25 @@
-import { useScrollReveal } from '@/hooks/useScrollReveal';
-import { projects } from '@/data/portfolio';
-import { SectionTitle } from '@/components/About';
-import { CheckCircle2, Code2, ExternalLink, Folder } from 'lucide-react';
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { projects } from "@/data/portfolio";
+import { SectionTitle } from "@/components/About";
+import { CheckCircle2, Code2, ExternalLink, Folder } from "lucide-react";
 
 export default function Projects() {
   const { ref, visible } = useScrollReveal();
 
   return (
-    <section id="projects" className="section-glow-left relative py-20 lg:py-28 border-t border-white/8 bg-[#0D121C]/30">
-      <div ref={ref} className={`max-w-7xl mx-auto px-5 lg:px-8 reveal ${visible ? 'visible' : ''}`}>
+    <section
+      id="projects"
+      className="section-glow-left relative py-20 lg:py-28 border-t border-white/8 bg-[#0D121C]/30"
+    >
+      <div
+        ref={ref}
+        className={`max-w-7xl mx-auto px-5 lg:px-8 reveal ${visible ? "visible" : ""}`}
+      >
         <SectionTitle title="Projects" />
 
         <p className="mt-4 text-white/40 text-sm font-body max-w-xl">
-          Selected systems I have designed, shipped, and kept running in production.
+          Selected systems I have designed, shipped, and kept running in
+          production.
         </p>
 
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 mt-10">
@@ -53,7 +60,9 @@ export default function Projects() {
                       {project.subtitle}
                     </p>
                   </div>
-                  <span className="font-mono text-xs text-white/25 shrink-0">{project.year}</span>
+                  <span className="font-mono text-xs text-white/25 shrink-0">
+                    {project.year}
+                  </span>
                 </div>
 
                 <p className="text-sm text-white/55 leading-relaxed font-body font-light mt-4">
@@ -66,7 +75,10 @@ export default function Projects() {
                   </h4>
                   <ul className="flex flex-col gap-2 mt-3">
                     {project.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-2 text-[13px] text-white/60 leading-snug">
+                      <li
+                        key={feature}
+                        className="flex items-start gap-2 text-[13px] text-white/60 leading-snug"
+                      >
                         <CheckCircle2 className="w-3.5 h-3.5 text-[#417E38] mt-0.5 shrink-0" />
                         <span>{feature}</span>
                       </li>
@@ -95,10 +107,14 @@ export default function Projects() {
                 {project.metrics.map((metric, index) => (
                   <div
                     key={metric.label}
-                    className={`px-3 py-3 ${index > 0 ? 'border-l border-white/8' : ''}`}
+                    className={`px-3 py-3 ${index > 0 ? "border-l border-white/8" : ""}`}
                   >
-                    <p className="text-base font-bold text-[#417E38] leading-none">{metric.value}</p>
-                    <p className="font-mono text-[9px] text-white/30 mt-1 leading-tight">{metric.label}</p>
+                    <p className="text-base font-bold text-[#417E38] leading-none">
+                      {metric.value}
+                    </p>
+                    <p className="font-mono text-[9px] text-white/30 mt-1 leading-tight">
+                      {metric.label}
+                    </p>
                   </div>
                 ))}
               </div>

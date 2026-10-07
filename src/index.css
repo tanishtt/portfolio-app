@@ -6,8 +6,8 @@
   :root {
     --white: #ffffff;
     --black: #000000;
-    --primary: #0D121C;
-    --secondary: #417E38;
+    --primary: #0d121c;
+    --secondary: #417e38;
     --secondary-light: #5a9e4f;
     --secondary-dark: #2c682c;
     --border: rgba(255, 255, 255, 0.08);
@@ -30,7 +30,7 @@
   body {
     background-color: var(--black);
     color: var(--text);
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
@@ -60,13 +60,15 @@
 
 @layer utilities {
   .font-body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
 
   .reveal {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
   }
   .reveal.visible {
     opacity: 1;
@@ -84,88 +86,166 @@
 
 /* Animations */
 @keyframes blink {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
 .animate-blink {
   animation: blink 1s step-end infinite;
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 .animate-float {
   animation: float 5s ease-in-out infinite;
 }
 
 @keyframes drift {
-  0% { transform: translate(0, 0); }
-  33% { transform: translate(20px, -15px); }
-  66% { transform: translate(-15px, 10px); }
-  100% { transform: translate(0, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(20px, -15px);
+  }
+  66% {
+    transform: translate(-15px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 .animate-drift {
   animation: drift 15s ease-in-out infinite;
 }
 
 @keyframes pulse-dot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.7); }
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.7);
+  }
 }
 .animate-pulse-dot {
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 .animate-marquee {
   animation: marquee 40s linear infinite;
 }
 
 @keyframes fade-in {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .animate-fade-in {
   animation: fade-in 0.5s ease forwards;
 }
 
 @keyframes type-cursor {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .portfolio-background {
   background-image:
-    radial-gradient(ellipse 38% 28% at 14% 12%, rgba(65, 126, 56, 0.12), transparent 72%),
-    radial-gradient(ellipse 34% 24% at 86% 43%, rgba(44, 104, 44, 0.08), transparent 74%),
-    radial-gradient(ellipse 42% 25% at 28% 82%, rgba(65, 126, 56, 0.07), transparent 74%);
+    radial-gradient(
+      ellipse 38% 28% at 14% 12%,
+      rgba(65, 126, 56, 0.12),
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 34% 24% at 86% 43%,
+      rgba(44, 104, 44, 0.08),
+      transparent 74%
+    ),
+    radial-gradient(
+      ellipse 42% 25% at 28% 82%,
+      rgba(65, 126, 56, 0.07),
+      transparent 74%
+    );
   background-attachment: fixed;
 }
 
 .section-glow-left {
-  background-image: radial-gradient(ellipse 64% 96% at 0% 48%, rgba(65, 126, 56, 0.23), transparent 76%);
+  background-image: radial-gradient(
+    ellipse 64% 96% at 0% 48%,
+    rgba(65, 126, 56, 0.23),
+    transparent 76%
+  );
 }
 
 .section-glow-right {
-  background-image: radial-gradient(ellipse 64% 96% at 100% 52%, rgba(44, 104, 44, 0.23), transparent 76%);
+  background-image: radial-gradient(
+    ellipse 64% 96% at 100% 52%,
+    rgba(44, 104, 44, 0.23),
+    transparent 76%
+  );
 }
 
 .section-glow-top-left {
-  background-image: radial-gradient(ellipse 62% 90% at 8% 0%, rgba(65, 126, 56, 0.22), transparent 76%);
+  background-image: radial-gradient(
+    ellipse 62% 90% at 8% 0%,
+    rgba(65, 126, 56, 0.22),
+    transparent 76%
+  );
 }
 
 .section-glow-top-right {
-  background-image: radial-gradient(ellipse 62% 90% at 92% 0%, rgba(44, 104, 44, 0.22), transparent 76%);
+  background-image: radial-gradient(
+    ellipse 62% 90% at 92% 0%,
+    rgba(44, 104, 44, 0.22),
+    transparent 76%
+  );
 }
 
 .section-glow-center {
-  background-image: radial-gradient(ellipse 62% 88% at 50% 0%, rgba(65, 126, 56, 0.21), transparent 78%);
+  background-image: radial-gradient(
+    ellipse 62% 88% at 50% 0%,
+    rgba(65, 126, 56, 0.21),
+    transparent 78%
+  );
 }
 
 .section-glow-bottom {
-  background-image: radial-gradient(ellipse 62% 90% at 55% 100%, rgba(44, 104, 44, 0.21), transparent 76%);
+  background-image: radial-gradient(
+    ellipse 62% 90% at 55% 100%,
+    rgba(44, 104, 44, 0.21),
+    transparent 76%
+  );
 }
