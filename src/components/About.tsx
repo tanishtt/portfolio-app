@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="section-glow-top-left relative py-20 lg:py-28 border-t border-white/8"
+      className="section-glow-top-left relative py-16 lg:py-24 border-t border-white/8"
     >
       <div
         ref={ref}

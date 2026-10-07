@@ -9,7 +9,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="section-glow-center relative py-20 lg:py-28 border-t border-white/8"
+      className="section-glow-center relative py-16 lg:py-24 border-t border-white/8"
     >
       <div
         ref={ref}

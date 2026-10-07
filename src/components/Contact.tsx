@@ -22,7 +22,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="section-glow-top-left relative py-20 lg:py-28 border-t border-white/8 bg-[#0D121C]/30"
+      className="section-glow-top-left relative py-16 lg:py-24 border-t border-white/8 bg-[#0D121C]/30"
     >
       <div
         ref={ref}

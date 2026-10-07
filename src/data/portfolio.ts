@@ -14,7 +14,7 @@ export const personal = {
   email: "tanishmohanta1901@gmail.com",
   phone: "+91 7903109365",
   github: "https://github.com/tanishtt",
-  linkedin: "https://linkedin.com",
+  linkedin: "https://www.linkedin.com/in/tanish-mohanta-09b07b1b2/",
   twitter: "https://twitter.com",
   resumeUrl: "#",
   aboutTitle: "Welcome to the Mohanta Zone: Where Code Meets Scale",

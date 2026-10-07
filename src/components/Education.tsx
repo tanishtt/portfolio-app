@@ -9,7 +9,7 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="section-glow-bottom relative py-20 lg:py-28 grain border-t border-[var(--border)]"
+      className="section-glow-bottom relative py-16 lg:py-24 grain border-t border-[var(--border)]"
     >
       <div
         ref={ref}

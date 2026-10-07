@@ -45,7 +45,7 @@ export default function Hero() {
         <div className="flex flex-col gap-8 max-w-4xl">
           {/* Terminal prompt */}
           <div className="flex items-center gap-2 font-mono text-sm">
-            <span className="text-[#417E38]">visitor@soren-vinter</span>
+            <span className="text-[#417E38]">visitor@tanish-mohanta</span>
             <span className="text-white/30">:</span>
             <span className="text-white/50">~</span>
             <span className="text-white/30">$</span>

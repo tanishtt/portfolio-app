@@ -27,7 +27,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="section-glow-top-right relative py-20 lg:py-28 border-t border-white/8"
+      className="section-glow-top-right relative py-16 lg:py-24 border-t border-white/8"
     >
       <div
         ref={ref}
