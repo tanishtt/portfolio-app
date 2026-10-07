@@ -205,7 +205,7 @@
 .section-glow-left {
   background-image: radial-gradient(
     ellipse 64% 96% at 0% 48%,
-    rgba(65, 126, 56, 0.23),
+    rgba(65, 126, 56, 0.29),
     transparent 76%
   );
 }
@@ -213,7 +213,7 @@
 .section-glow-right {
   background-image: radial-gradient(
     ellipse 64% 96% at 100% 52%,
-    rgba(44, 104, 44, 0.23),
+    rgba(44, 104, 44, 0.29),
     transparent 76%
   );
 }
@@ -221,7 +221,7 @@
 .section-glow-top-left {
   background-image: radial-gradient(
     ellipse 62% 90% at 8% 0%,
-    rgba(65, 126, 56, 0.22),
+    rgba(65, 126, 56, 0.28),
     transparent 76%
   );
 }
@@ -229,7 +229,7 @@
 .section-glow-top-right {
   background-image: radial-gradient(
     ellipse 62% 90% at 92% 0%,
-    rgba(44, 104, 44, 0.22),
+    rgba(44, 104, 44, 0.28),
     transparent 76%
   );
 }
@@ -237,7 +237,7 @@
 .section-glow-center {
   background-image: radial-gradient(
     ellipse 62% 88% at 50% 0%,
-    rgba(65, 126, 56, 0.21),
+    rgba(65, 126, 56, 0.27),
     transparent 78%
   );
 }
@@ -245,7 +245,16 @@
 .section-glow-bottom {
   background-image: radial-gradient(
     ellipse 62% 90% at 55% 100%,
-    rgba(44, 104, 44, 0.21),
+    rgba(44, 104, 44, 0.27),
     transparent 76%
   );
+}
+
+.section-glow-left,
+.section-glow-right,
+.section-glow-top-left,
+.section-glow-top-right,
+.section-glow-center,
+.section-glow-bottom {
+  border-top-color: rgba(255, 255, 255, 0.04);
 }
