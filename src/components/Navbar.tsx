@@ -39,7 +39,7 @@ export default function Navbar() {
             <Terminal className="w-4.5 h-4.5 text-[#417E38]" />
           </span>
           <span className="text-white text-sm font-bold tracking-tight">
-            Soren<span className="text-[#417E38]">.</span>Vinter
+            Tanish<span className="text-[#417E38]">.</span>Mohanta
           </span>
         </a>
 

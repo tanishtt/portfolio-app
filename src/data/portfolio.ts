@@ -10,7 +10,7 @@ export const personal = {
   ],
   tagline:
     "Building reliable systems is a challenge. I bring expertise in distributed architecture, API design, data infrastructure, and the quiet plumbing that keeps products running at scale.",
-  location: "Copenhagen, Denmark",
+  location: "Bengaluru, India",
   email: "tanishmohanta1901@gmail.com",
   phone: "+91 7903109365",
   github: "https://github.com/tanishtt",

@@ -7,9 +7,9 @@
     --white: #ffffff;
     --black: #000000;
     --primary: #0d121c;
-    --secondary: #417e38;
-    --secondary-light: #5a9e4f;
-    --secondary-dark: #2c682c;
+    --secondary: #4d9a4d;
+    --secondary-light: #79d57c;
+    --secondary-dark: #2d6c2d;
     --border: rgba(255, 255, 255, 0.08);
     --border-strong: rgba(255, 255, 255, 0.15);
     --text: #ffffff;
@@ -76,7 +76,9 @@
   }
 
   .glow-green {
-    box-shadow: 0 0 80px -20px rgba(65, 126, 56, 0.3);
+    box-shadow:
+      0 0 90px -20px rgba(77, 154, 77, 0.45),
+      0 0 35px rgba(121, 213, 124, 0.22);
   }
 
   .text-balance {
@@ -186,17 +188,17 @@
   background-image:
     radial-gradient(
       ellipse 38% 28% at 14% 12%,
-      rgba(65, 126, 56, 0.12),
+      rgba(77, 154, 77, 0.18),
       transparent 72%
     ),
     radial-gradient(
       ellipse 34% 24% at 86% 43%,
-      rgba(44, 104, 44, 0.08),
+      rgba(45, 108, 45, 0.14),
       transparent 74%
     ),
     radial-gradient(
       ellipse 42% 25% at 28% 82%,
-      rgba(65, 126, 56, 0.07),
+      rgba(77, 154, 77, 0.12),
       transparent 74%
     );
   background-attachment: fixed;
@@ -205,7 +207,7 @@
 .section-glow-left {
   background-image: radial-gradient(
     ellipse 64% 96% at 0% 48%,
-    rgba(65, 126, 56, 0.29),
+    rgba(77, 154, 77, 0.36),
     transparent 76%
   );
 }
@@ -213,7 +215,7 @@
 .section-glow-right {
   background-image: radial-gradient(
     ellipse 64% 96% at 100% 52%,
-    rgba(44, 104, 44, 0.29),
+    rgba(45, 108, 45, 0.34),
     transparent 76%
   );
 }
@@ -221,7 +223,7 @@
 .section-glow-top-left {
   background-image: radial-gradient(
     ellipse 62% 90% at 8% 0%,
-    rgba(65, 126, 56, 0.28),
+    rgba(77, 154, 77, 0.38),
     transparent 76%
   );
 }
@@ -229,7 +231,7 @@
 .section-glow-top-right {
   background-image: radial-gradient(
     ellipse 62% 90% at 92% 0%,
-    rgba(44, 104, 44, 0.28),
+    rgba(45, 108, 45, 0.32),
     transparent 76%
   );
 }
@@ -237,7 +239,7 @@
 .section-glow-center {
   background-image: radial-gradient(
     ellipse 62% 88% at 50% 0%,
-    rgba(65, 126, 56, 0.27),
+    rgba(77, 154, 77, 0.33),
     transparent 78%
   );
 }
@@ -245,7 +247,7 @@
 .section-glow-bottom {
   background-image: radial-gradient(
     ellipse 62% 90% at 55% 100%,
-    rgba(44, 104, 44, 0.27),
+    rgba(45, 108, 45, 0.3),
     transparent 76%
   );
 }
