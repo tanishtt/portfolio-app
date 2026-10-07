@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { personal } from "@/data/portfolio";
+import profileImage from "@/assets/tanish-img.png";
 import { Quote } from "lucide-react";
 
 export default function About() {
@@ -21,24 +22,12 @@ export default function About() {
             <div className="relative">
               <div className="absolute inset-0 bg-[#417E38]/10 blur-[40px] rounded-2xl" />
               <div className="relative rounded-2xl border border-white/10 bg-[#0D121C] p-1.5 overflow-hidden">
-                <div className="aspect-square rounded-xl bg-gradient-to-br from-[#0D121C] to-[#1a2330] flex items-center justify-center relative overflow-hidden">
-                  {/* Decorative pattern */}
-                  <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-0 left-0 right-0 h-px bg-[#417E38]"></div>
-                    <div className="absolute top-1/4 left-0 right-0 h-px bg-[#417E38]/50"></div>
-                    <div className="absolute top-1/2 left-0 right-0 h-px bg-[#417E38]/30"></div>
-                    <div className="absolute top-3/4 left-0 right-0 h-px bg-[#417E38]/20"></div>
-                  </div>
-                  <div className="flex flex-col items-center gap-4 text-center px-6">
-                    <div className="w-24 h-24 rounded-full bg-[#417E38]/20 border-2 border-[#417E38]/40 flex items-center justify-center">
-                      <span className="text-4xl font-bold text-[#417E38]">
-                        SV
-                      </span>
-                    </div>
-                    <p className="text-sm text-white/40 font-mono">
-                      [ profile.jpg ]
-                    </p>
-                  </div>
+                <div className="aspect-square rounded-xl bg-gradient-to-br from-[#0D121C] to-[#1a2330] overflow-hidden">
+                  <img
+                    src={profileImage}
+                    alt="Tanish"
+                    className="h-full w-full object-cover object-center"
+                  />
                 </div>
               </div>
             </div>
