@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-black text-white">
+    <div className="portfolio-background relative min-h-screen bg-black text-white">
       <Navbar />
       <main>
         <Hero />

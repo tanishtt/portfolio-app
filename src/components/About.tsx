@@ -6,7 +6,7 @@ export default function About() {
   const { ref, visible } = useScrollReveal();
 
   return (
-    <section id="about" className="relative py-20 lg:py-28 border-t border-white/8">
+    <section id="about" className="section-glow-top-left relative py-20 lg:py-28 border-t border-white/8">
       <div ref={ref} className={`max-w-7xl mx-auto px-5 lg:px-8 reveal ${visible ? 'visible' : ''}`}>
         <SectionTitle title="About Me" />
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 mt-12">

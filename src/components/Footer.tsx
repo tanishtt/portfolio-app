@@ -4,7 +4,7 @@ import { personal, navLinks } from "@/data/portfolio";
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/8 py-12">
+    <footer className="section-glow-right relative border-t border-white/8 py-12">
       <div className="max-w-7xl mx-auto px-5 lg:px-8">
         <div className="grid sm:grid-cols-3 gap-8 mb-10">
           <div className="flex flex-col gap-3">

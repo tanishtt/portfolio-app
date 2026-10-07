@@ -7,7 +7,7 @@ export default function Career() {
   const { ref, visible } = useScrollReveal();
 
   return (
-    <section id="career" className="relative py-20 lg:py-28 border-t border-white/8 bg-[#0D121C]/30">
+    <section id="career" className="section-glow-right relative py-20 lg:py-28 border-t border-white/8 bg-[#0D121C]/30">
       <div ref={ref} className={`max-w-7xl mx-auto px-5 lg:px-8 reveal ${visible ? 'visible' : ''}`}>
         <SectionTitle title="Career" />
         <p className="mt-4 text-white/40 text-sm font-body">

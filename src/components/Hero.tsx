@@ -35,7 +35,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center pt-16 overflow-hidden"
+      className="section-glow-right relative min-h-screen flex items-center pt-16 overflow-hidden"
     >
       {/* Glow orbs */}
       <div className="absolute top-1/4 -right-32 w-96 h-96 rounded-full bg-[#417E38]/15 blur-[140px] animate-drift pointer-events-none" />

@@ -7,7 +7,7 @@ export default function Experience() {
   const { ref, visible } = useScrollReveal();
 
   return (
-    <section id="experience" className="relative py-20 lg:py-28 border-t border-white/8">
+    <section id="experience" className="section-glow-center relative py-20 lg:py-28 border-t border-white/8">
       <div ref={ref} className={`max-w-7xl mx-auto px-5 lg:px-8 reveal ${visible ? 'visible' : ''}`}>
         <SectionTitle title="Experience" />
 

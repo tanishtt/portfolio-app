@@ -7,7 +7,7 @@ export default function Education() {
   const { ref, visible } = useScrollReveal();
 
   return (
-    <section id="education" className="relative py-20 lg:py-28 grain border-t border-[var(--border)]">
+    <section id="education" className="section-glow-bottom relative py-20 lg:py-28 grain border-t border-[var(--border)]">
       <div ref={ref} className={`max-w-6xl mx-auto px-5 lg:px-8 reveal ${visible ? 'visible' : ''}`}>
         <SectionLabel num="05" label="Education & Writing" />
 
